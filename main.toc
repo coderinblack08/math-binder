@@ -1,5 +1,7 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Polynomials}{2}%
-\contentsline {subsection}{\numberline {1.1}Definition and Basics}{2}%
-\contentsline {subsection}{\numberline {1.2}Synthetic Division}{3}%
-\contentsline {subsection}{\numberline {1.3}Rational Root Theorem}{3}%
+\contentsline {section}{\numberline {1}§ Polynomials}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Definition and Basics}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Synthetic Division}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Rational Root Theorem}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Remainder Theorem}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Practice Problems}{4}{subsection.1.5}%

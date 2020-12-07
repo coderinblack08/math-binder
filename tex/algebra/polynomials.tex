@@ -1,4 +1,4 @@
-\section{Polynomials}
+\section{§ Polynomials}
 \subsection{Definition and Basics}
 A polynomial is defined as $P(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0$ 
 with names corresponding to their degree (constant, linear, quadratic, cubic, quartic).
@@ -32,7 +32,7 @@ The most important formula for polynomials is the Vieta Formulas.
 A simplification of traditional polynomial division. Note this only works when the coefficients of 
 the linear term in the divisor is $1$. It is also know as the \textbf{Ruffini's Rule}.
 
-Example:
+\textbf{Example:}
 $\begin{array}{c|rrrrr} 3&\parbox[b]{0.2in}{\raggedleft 1}&\parbox[b]{0.2in}{\raggedleft -3}&\parbox[b]{0.2in}{\raggedleft 7}&\parbox[b]{0.2in}{\raggedleft -1}&\parbox[b]{0.2in}{\raggedleft 5}\\ &&{3}&{0}&21&60 \\\cline{2-6} \multicolumn{2}{r}{{1}}& {0}&7&20&\multicolumn{1}{|r}{65} \end{array}$
 
 Which is the same as $(x^4 - 3x^3 + 7x^2 - x + 5) \div (x - 3) = $. Notice you work from left to right, and multiply to get the next number in the second row.
@@ -41,5 +41,36 @@ If your divisor doesn't have $1$ as its coefficient in the linear term, you can 
 Usually, you write the result of polynomial division as $\frac{f(x)}{d(x)}=q(x)+\frac{r(x)}{d(x)}$.
 
 \subsection{Rational Root Theorem}
-A rational root of a polynomial in the form $\pm\frac{p}{q}$ where $p$ and $q$ are relatively prime must follow the condition
-$p | a_0$ and $q | a_n$.
+\begin{theorem}[Rational Root Theorem]
+  A rational root of a polynomial in the form $\pm\frac{p}{q}$ where $p$ and $q$ are relatively prime must follow the condition
+  $p | a_0$ and $q | a_n$.
+\end{theorem}
+
+\subsection{Remainder Theorem}
+\begin{theorem}[Remainder Theorem]
+  When a polynomial $f(x)$ is divided by $x-a$, the remainder is determined by $f(a)$.
+\end{theorem}
+
+Theorem 1.3 can be proven using the form $\frac{f(x)}{d(x)}=q(x)+\frac{r(x)}{d(x)}$ and synthetic division.
+
+\begin{proof}[Remainder Theorem]
+  \begin{align*}
+    f(x) &= (x-a)q(x) + r(x) \\
+    &= (x-a)q(x)+c. \\
+    f(a)&=(a-a)q(a)+c \\
+    &=0 \cdot q(a) + c = c
+  \end{align*}
+  Thus, $f(a)$ always returns the remainder of $f(x) \div (x-a)$.
+\end{proof}
+
+\subsection{Practice Problems}
+Problems from Intermediate Algebra, AoPS.
+\begin{enumerate}
+  \item 6.11, pg.181
+  \item 6.21 pg. 191
+  \item 6.17, pg. 187
+  \item 6.22, pg. 191
+  \item 6.27, pg. 191
+  \item 6.29, pg. 192
+  \item $\star$ Challenge Problems, pg. 192
+\end{enumerate}
