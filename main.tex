@@ -1,41 +1,15 @@
-\documentclass[12pt, a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\renewcommand{\baselinestretch}{1.6}
-\setlength{\parskip}{1em}
-\newtheorem{theorem}{Theorem}
-\newtheorem{formula}{Formula}
+\include{imports}
 
 \title{\textbf{Math Binder - AMC/AIME}}
 \author{Hansel Grimes}
 
 \begin{document}
   \maketitle
+
   \tableofcontents
 
   \newpage
 
-  \section{Polynomials}
-  \subsection{Definition and Factorization}
-  A polynomial is defined as $P(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0$ 
-  with names corresponding to their degree (constant, linear, quadratic, cubic, quartic).
-  
-  The factored form is written as $P(x) = a(x-r)(x-p)\cdots(x-q)$.
-  The simplest and most useful polynomial is the quadratic. It can be written as $ax^2+bx+c$ and factored respectively.
-  The formula to solve for $x$ is $x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. 
-  The most important formula for polynomials is the Vieta Formulas.
-
-  \begin{formula}
-    Vieta Formulas include \\
-    Sum of roots ($r_1+r_2+r_3+\cdots+r_n$): $-\frac{a_{n-1}}{a_{n}}$ \\
-    Product of roots ($r_1 \cdot r_2 \cdot r_3 \cdots r_n$): $(-1)^n \cdot \frac{a_0}{a_n}$ \\
-    Pairwise sums of $p$  ($p=2$: $r_1r_2+r_1r_3+r_1r_4+\cdots+r_{n-1}r_n$): $(-1)^p \cdot \frac{a_{n - p}}{a_{n}}$
-  \end{formula}
-
-
-  \begin{theorem}
-    Fundamental theorem of algebra states that a single variable polynomial with degree
-    $n$ has exactly $n$ complex roots.
-  \end{theorem}
+  \include{tex/algebra/polynomials}
 
 \end{document}

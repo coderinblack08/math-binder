@@ -1,0 +1,45 @@
+\section{Polynomials}
+\subsection{Definition and Basics}
+A polynomial is defined as $P(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0$ 
+with names corresponding to their degree (constant, linear, quadratic, cubic, quartic).
+
+The factored form is written as $P(x) = a(x-r)(x-p)\cdots(x-q)$.
+The simplest and most useful polynomial is the quadratic. It can be written as $ax^2+bx+c$ and factored respectively.
+The formula to solve for $x$ is $x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$. 
+The most important formula for polynomials is the Vieta Formulas.
+
+\begin{formula}[Vieta Formulas]
+  Sum of roots ($r_1+r_2+r_3+\cdots+r_n$): $-\frac{a_{n-1}}{a_{n}}$ \\
+  Product of roots ($r_1  r_2  r_3 \cdots r_n$): $(-1)^n \cdot \frac{a_0}{a_n}$ \\
+  Pairwise sums of $p$  ($p=2$: $r_1r_2+r_1r_3+r_1r_4+\cdots+r_{n-1}r_n$): $(-1)^p \cdot \frac{a_{n - p}}{a_{n}}$
+\end{formula}
+
+\begin{theorem}[Fundamental theorem of algebra]
+  It states that a single variable polynomial with degree
+  $n$ has exactly $n$ complex roots.
+\end{theorem}
+
+\begin{problem}
+  Let $r,s,$ and $t$ be the roots of $3x^3-4x^2+5x+7=0$. (IA 8.20 p.249)
+  \begin{enumerate}
+    \item Find $r+s+t$ ($\frac{4}{3}$).
+    \item Find $r^2+s^2+t^2$ ($\frac{-14}{9}$).
+    \item Find $\frac{1}{r} + \frac{1}{s} + \frac{1}{t}$ ($\frac{-5}{7}$).
+  \end{enumerate}
+\end{problem}
+
+\subsection{Synthetic Division}
+A simplification of traditional polynomial division. Note this only works when the coefficients of 
+the linear term in the divisor is $1$. It is also know as the \textbf{Ruffini's Rule}.
+
+Example:
+$\begin{array}{c|rrrrr} 3&\parbox[b]{0.2in}{\raggedleft 1}&\parbox[b]{0.2in}{\raggedleft -3}&\parbox[b]{0.2in}{\raggedleft 7}&\parbox[b]{0.2in}{\raggedleft -1}&\parbox[b]{0.2in}{\raggedleft 5}\\ &&{3}&{0}&21&60 \\\cline{2-6} \multicolumn{2}{r}{{1}}& {0}&7&20&\multicolumn{1}{|r}{65} \end{array}$
+
+Which is the same as $(x^4 - 3x^3 + 7x^2 - x + 5) \div (x - 3) = $. Notice you work from left to right, and multiply to get the next number in the second row.
+If your divisor doesn't have $1$ as its coefficient in the linear term, you can divide it by $1/n$ and in the end also multiply the quotient and remainder by $1/n$.
+
+Usually, you write the result of polynomial division as $\frac{f(x)}{d(x)}=q(x)+\frac{r(x)}{d(x)}$.
+
+\subsection{Rational Root Theorem}
+A rational root of a polynomial in the form $\pm\frac{p}{q}$ where $p$ and $q$ are relatively prime must follow the condition
+$p | a_0$ and $q | a_n$.
