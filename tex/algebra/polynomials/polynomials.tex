@@ -1,4 +1,4 @@
-\section{§ Polynomials}
+\section{Polynomials}
 \subsection{Definition and Basics}
 A polynomial is defined as $P(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0$ 
 with names corresponding to their degree (constant, linear, quadratic, cubic, quartic).
@@ -20,7 +20,7 @@ The most important formula for polynomials is the Vieta Formulas.
 \end{theorem}
 
 \begin{problem}
-  Let $r,s,$ and $t$ be the roots of $3x^3-4x^2+5x+7=0$. (IA 8.20 p.249)
+  Let $r,s,$ and $t$ be the roots of $3x^3-4x^2+5x+7=0$. (\ia, 8.20 pg.249)
   \begin{enumerate}
     \item Find $r+s+t$ ($\frac{4}{3}$).
     \item Find $r^2+s^2+t^2$ ($\frac{-14}{9}$).
@@ -35,7 +35,7 @@ the linear term in the divisor is $1$. It is also know as the \textbf{Ruffini's 
 \textbf{Example:}
 $\begin{array}{c|rrrrr} 3&\parbox[b]{0.2in}{\raggedleft 1}&\parbox[b]{0.2in}{\raggedleft -3}&\parbox[b]{0.2in}{\raggedleft 7}&\parbox[b]{0.2in}{\raggedleft -1}&\parbox[b]{0.2in}{\raggedleft 5}\\ &&{3}&{0}&21&60 \\\cline{2-6} \multicolumn{2}{r}{{1}}& {0}&7&20&\multicolumn{1}{|r}{65} \end{array}$
 
-Which is the same as $(x^4 - 3x^3 + 7x^2 - x + 5) \div (x - 3) = $. Notice you work from left to right, and multiply to get the next number in the second row.
+Which is the same as $(x^4 - 3x^3 + 7x^2 - x + 5) \div (x - 3) = x^3+7x+20+\frac{65}{x-3}$. Notice you work from left to right, and multiply to get the next number in the second row.
 If your divisor doesn't have $1$ as its coefficient in the linear term, you can divide it by $1/n$ and in the end also multiply the quotient and remainder by $1/n$.
 
 Usually, you write the result of polynomial division as $\frac{f(x)}{d(x)}=q(x)+\frac{r(x)}{d(x)}$.
@@ -63,14 +63,24 @@ Theorem 1.3 can be proven using the form $\frac{f(x)}{d(x)}=q(x)+\frac{r(x)}{d(x
   Thus, $f(a)$ always returns the remainder of $f(x) \div (x-a)$.
 \end{proof}
 
+\subsection{Factor Theorem}
+\begin{theorem}[Factor Theorem]
+given the expression $x-a$, it is a divisor of $p(x)$ if and only if $p(a)=0$. This can be proven with the remainder theorem.
+\end{theorem}
+
+\subsection{Miscellaneous}
+To find the sum of the coefficients of a polynomial $P(x)$, plug $x=1$! 
+Example problem: Practice problem \#2
+ 
 \subsection{Practice Problems}
-Problems from Intermediate Algebra, AoPS.
+Problems from \ia.
 \begin{enumerate}
-  \item 6.11, pg.181
+  \item \sout{6.11, pg. 181}
   \item 6.21 pg. 191
   \item 6.17, pg. 187
   \item 6.22, pg. 191
   \item 6.27, pg. 191
   \item 6.29, pg. 192
   \item $\star$ Challenge Problems, pg. 192
+  \item \url{https://numbertheoryguydotcom.files.wordpress.com/2016/03/polynomials.pdf}
 \end{enumerate}

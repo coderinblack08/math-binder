@@ -1,0 +1,102 @@
+\section{Algebraic Manipulations}
+\subsection{Definitions}
+Sophie Germain: \[x^4 + 4y^4 = (x^2-2xy+y^2)(x^2+2xy+y^2)\] \\
+$(x+y)^3 = x^3+3xy(x+y)+y^3 = x^3+3x^2y+3xy^2+y^3$. \\
+$(x-y)^3 = x^3+3xy(x-y)+y^3 = x^3-3x^2y+3xy^2-y^3$. \\
+$x^3 + y^3 = (x+y)(x^2-xy+y^2)$. \\
+$x^3 - y^3 = (x-y)(x^2+xy+y^2)$. \\
+$x^3+y^3+z^3-3xyz = (x+y+z)(x^2+y^2+z^2−xy−yz−zx)$.
+
+\subsection{Practice Problems}
+\begin{enumerate}
+  \item Given that $x$ and $y$ are distinct nonzero real n umbers such that $x+2/x=y+2/y$, what is $xy$?
+  \\ \textbf{Solution}: 
+  \begin{align*}
+    x - y &= 2/y - 2/x \\
+    x - y &= \frac{2x - 2y}{xy} \\
+    &= \frac{2(x-y)}{xy} \\
+    &= \frac{2}{xy} = 1 \\
+    xy &= \boxed{2}.
+  \end{align*}
+  \item Suppose that real number $x$ satisfies $\sqrt{49-x^2} - \sqrt{25 - x^2} = 3$. What is the value of $\sqrt{49-x^2} + \sqrt{25 - x^2}$
+  \\ \textbf{Solution}:
+  \begin{align*}
+    &(\sqrt{49-x^2} - \sqrt{25 - x^2})(\sqrt{49-x^2} + \sqrt{25 - x^2}) \\
+    &= (49-x^2) - (25 - x^2) \\
+    &= 24 = 3(\sqrt{49-x^2} + \sqrt{25 - x^2})
+    (\sqrt{49-x^2} + \sqrt{25 - x^2}) = \boxed{8}.
+  \end{align*}
+  \item What is the minimum value of the expression $x^2 + 8x + 13$ for any real $x$?
+  \\ \textbf{Solution}:
+  \begin{align*}
+    x^2 + 8x + 13 = (x + 4)^2 - 3 \\
+    \min((x + 4)^2 - 3) = \boxed{-3}.
+  \end{align*}
+  \item Real numbers $x$ and $y$ satisfy the equation $x^2+y^2=10x-6y-34$. What is $x+y$?
+  \\ \textbf{Solution}:
+  \begin{align*}
+    (x^2-10x) + (y^2+6y) = -34 \\
+    (x-5)^2+(y+3)^2 = 0 \\
+    x = 5, y = -3 \\
+    x+y = \boxed{2}.
+  \end{align*}
+  \item There is a positive integer $n$ such that $(n+1)!+(n+2)! = n!\cdot 440$. What is the sum of the digits of $n$?
+  \\ \textbf{Solution}:
+  \begin{align*}
+    n!(n+1)^2(n+2) &= n!(440) \\
+    (n+1)(n+3) &= 440 \\
+    ((n+2)+1)((n+2)-1) &= 440 \\
+    (n+2)^2-1^2 &= 440 \\
+    (n+2)^2 &= 441 \\
+    n + 2 &= 21 \\
+    n &= \boxed{19}.
+  \end{align*}
+  \item For all integers $n \geq 9$, the value of $\frac{(n+2)! - (n+1)!}{n!}$ is always which of the following?
+  \\ \textbf{Solution}:
+  \begin{align*}
+    \frac{n!((n+2)(n+1)-(n+1))}{n!} = (n+1)^2.
+  \end{align*}
+  The expression must always be a perfect square.
+  \item Let $f(x) = x^{2}(1-x)^{2}$. What is the value of the sum
+  $f \left(\frac{1}{2019} \right)-f  \left(\frac{2}{2019} \right)+f \left(\frac{3}{2019} \right)-f \left(\frac{4}{2019} \right)+\cdots + f \left(\frac{2017}{2019} \right) - f \left(\frac{2018}{2019} \right)?$
+  \\ $\textbf{(A) }0\qquad\textbf{(B) }\frac{1}{2019^{4}}\qquad\textbf{(C) }\frac{2018^{2}}{2019^{4}}\qquad\textbf{(D) }\frac{2020^{2}}{2019^{4}}\qquad\textbf{(E) }1$
+  \\ \textbf{Solution}:
+  \begin{align*}
+    \left( f \left(\frac{1}{2019} \right) - f \left(\frac{1}{2019} \right) \right) +  \left( f \left(\frac{2}{2019} \right) - f \left(\frac{2}{2019} \right) \right) + \cdots \\ + \left( f \left(\frac{1009}{2019} \right) - f \left(\frac{1009}{2019} \right) \right)
+  \end{align*}
+  The answer is $\boxed{\textbf{(A) }0}$.
+  \item Given that $x+\frac{1}{x}=3$, find 
+  \begin{enumerate}
+    \item $x^2+\frac{1}{x^2} = (x + \frac{1}{x})^2 = x^2 + 2 + \frac{1}{x^2} = 3^2 - 2 = \boxed{7}$.
+    \item $x^3 + \frac{1}{x^3} = (x+\frac{1}{x})(x^2-1+\frac{1}{x^2}) = 3(7-1)=\boxed{18}$.
+    \item $x^4 + \frac{1}{x^4} = 7^2 + 2 = 49 + 2 = \boxed{51}$.
+  \end{enumerate}
+  \item Real numbers $x$ and $y$ satisfy $x + y = 4$ and $x \cdot y = -2$. What is the value of\[x + \frac{x^3}{y^2} + \frac{y^3}{x^2} + y?\]
+  $\textbf{(A)}\ 360\qquad\textbf{(B)}\ 400\qquad\textbf{(C)}\ 420\qquad\textbf{(D)}\ 440\qquad\textbf{(E)}\ 480$
+  \\ \textbf{Solution}:
+  \begin{align*}
+    &\frac{x^3}{x^2}+\frac{x^3}{y^2}+\frac{y^3}{x^2}+\frac{y^3}{y^2} \\
+    &= \frac{x^3+y^3}{x^3}+\frac{x^3+y^3}{y^2} \\
+    &= \frac{88}{x^2} = \frac{88(x^2+y^2)}{4} = \boxed{44}.
+  \end{align*}
+  \item Let $r$, $s$, and $t$ be the three roots of the equation\[8x^3 + 1001x + 2008 = 0.\]Find $(r + s)^3 + (s + t)^3 + (t + r)^3$.
+  \\ \textbf{Solution}:
+  \begin{align*}
+    (r+s)^3 + (s+t)^3 + (t+r)^3  \\ = (0-t)^3 + (0-r)^3 + (0-s)^3 = -(r^3 + s^3 + t^3) \\
+    r^3 + s^3 + t^3 - 3rst = (r+s+t)(r^2 + s^2 + t^2 - rs - st - tr) = 0 \\
+    r^3+s^3+t^3 = 3rst = -251, -251 \cdot -3 = \boxed{753}.
+  \end{align*}
+  \item Find $3x^2y^2$ is $x$ and $y$ are integers such that $y^2+3x^2y^2=30x^2+517$.
+  \\ \textbf{Solution}:
+  \begin{align*}
+    a = x^2, b = y^2 \\
+    b+3ab = 30a+517 \\
+    ab + \frac{b}{3} - 10a = \frac{517}{3} \\
+    (a+\frac{1}{3})(b-10) = \frac{507}{3} \\
+    (3x^2 + 1)(y^2 - 10) = 507 \\
+    (x, y) = (\pm 2, \pm 7)
+  \end{align*}
+  $3x^2y^2 = 3 \cdot 4 \cdot 49 = \boxed{588}$.
+  \item What is the remainder when $s^{202} + 202$ is divided by $2^{101} + 2^{51} + 1$.
+  
+\end{enumerate}
