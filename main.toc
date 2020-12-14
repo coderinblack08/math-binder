@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {2}Algebraic Manipulations}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definitions}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Practice Problems}{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}$\S $ Complex Numbers}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Definition and Forms}{12}{subsection.3.1}%
+\contentsline {section}{\numberline {3}$\S $ Complex Numbers}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Definition and Forms}{14}{subsection.3.1}%

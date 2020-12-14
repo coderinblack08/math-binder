@@ -2,14 +2,14 @@
 \subsection{Definitions}
 Sophie Germain: \[x^4 + 4y^4 = (x^2-2xy+y^2)(x^2+2xy+y^2)\] \\
 $(x+y)^3 = x^3+3xy(x+y)+y^3 = x^3+3x^2y+3xy^2+y^3$. \\
-$(x-y)^3 = x^3+3xy(x-y)+y^3 = x^3-3x^2y+3xy^2-y^3$. \\
+$(x-y)^3 = x^3-3xy(x-y)+y^3 = x^3-3x^2y+3xy^2-y^3$. \\
 $x^3 + y^3 = (x+y)(x^2-xy+y^2)$. \\
 $x^3 - y^3 = (x-y)(x^2+xy+y^2)$. \\
 $x^3+y^3+z^3-3xyz = (x+y+z)(x^2+y^2+z^2−xy−yz−zx)$.
 
 \subsection{Practice Problems}
 \begin{enumerate}
-  \item Given that $x$ and $y$ are distinct nonzero real n umbers such that $x+2/x=y+2/y$, what is $xy$?
+  \item Given that $x$ and $y$ are distinct nonzero real numbers such that $x+2/x=y+2/y$, what is $xy$?
   \\ \textbf{Solution}: 
   \begin{align*}
     x - y &= 2/y - 2/x \\
@@ -98,5 +98,42 @@ $x^3+y^3+z^3-3xyz = (x+y+z)(x^2+y^2+z^2−xy−yz−zx)$.
   \end{align*}
   $3x^2y^2 = 3 \cdot 4 \cdot 49 = \boxed{588}$.
   \item What is the remainder when $s^{202} + 202$ is divided by $2^{101} + 2^{51} + 1$.
-  
+  \item Two non-zero real numbers, $a$ and $b,$ satisfy $ab = a - b$. Which of the following is a possible value of $\frac {a}{b} + \frac {b}{a} - ab$?
+
+  \textbf{Solution}:
+  \begin{align*}
+    \frac{a^2 + b^2}{ab} - ab &= \frac{(a-b)^2+2ab}{ab} - ab \\
+    &= \frac{(ab)^2 + 2ab}{ab} - ab \\
+    &= ab + 2 - ab = \boxed{2} \\
+  \end{align*}
+  \item If $x + \frac{1}{x} = 4$, then what is the value of $x^8 + \frac{1}{x^8}$?
+
+  \textbf{Solution}:
+  \begin{align*}
+    x^2 + \frac{1}{x^2} = 4^2 - 2 = 14 \\
+    x^4 + \frac{1}{x^4} = 14^2 - 2 = 194 \\
+    x^8 = \frac{1}{x^8} = 194^2 - 2 = \boxed{37624}.
+  \end{align*}
+  \item Let $a$ and $b$ be relatively prime positive integers with $a>b>0$ and $\dfrac{a^3-b^3}{(a-b)^3} = \dfrac{73}{3}.$ What is $a-b?$
+  \\ \textbf{Solution}:
+  \begin{align*}
+    \frac{a^3-b^3}{(a-b)^3} &= \frac{(a-b)(a^2+ab+b^2)}{(a-b)^3} \\
+    &= \frac{a^2+ab+b^2}{(a-b)^2} \\
+    &= \frac{(a-b)^2 - 3ab}{(a-b)^2} \\
+    &= 1+\frac{3ab}{(a-b)^2} \\
+    \frac{3ab}{(a-b)^2} &= \frac{70}{3} \\
+    9ab &= 70(a-b)^2 \\
+    3 \sqrt{\frac{ab}{70}} &= a - b \\
+    ab | 70&, 3 | a - b.
+  \end{align*}
+  Thus $a = 10, b = 7$ so $a - b = \boxed{3}$. 
+  \item If $(a - 1/a)^2 = 4$, what is the absolute value of $a^3 - 1/a^3$? 
+
+  \textbf{Solution}:
+  \begin{align*}
+    a - \frac{1}{a} &= 2 \\
+    (a - \frac{1}{a})^3 &= a^3 - \frac{1}{a^3} - 3(x - \frac{1}{x}) \\
+    2^3 &= a^3 - \frac{1}{a^3} - 6 \\
+    a^3 - \frac{1}{a^3} &= \boxed{14}
+  \end{align*}
 \end{enumerate}
